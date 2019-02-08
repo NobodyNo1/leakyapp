@@ -6,13 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View
 import android.widget.Button
 import com.leaky.amankeldi.leakyapplication.R
-import com.leaky.amankeldi.leakyapplication.activities.TestModel
 import com.leaky.amankeldi.leakyapplication.activities.testleak.view.LeakyActivity
 import com.leaky.amankeldi.leakyapplication.activities.testleak.view.NonLeakyActivity
 import com.leaky.amankeldi.leakyapplication.activities.testleak.view.SecondNonLeakyActivity
 
 import kotlinx.android.synthetic.main.activity_start.*
-import kotlin.reflect.KClass
 
 class StartActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -23,8 +21,6 @@ class StartActivity : AppCompatActivity(), View.OnClickListener {
         setListerner(findViewById<Button>(R.id.btn_leaky_activity))
         setListerner(findViewById<Button>(R.id.btn_non_leaky_activity))
         setListerner(findViewById<Button>(R.id.btn_second_non_leaky_activity))
-
-        val test = TestModel()
     }
 
     override fun onClick(v: View?) = when (v?.id) {
