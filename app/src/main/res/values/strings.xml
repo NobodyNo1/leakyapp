@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Leaky Application</string>
+    <string name="title_activity_start">Start Activity</string>
+    <string name="leaky_activity_title">Leaky Activity</string>
+    <string name="non_leaky_activity_title">Non Leaky Activity</string>
+    <string name="start_work">Start Work</string>
+</resources>
